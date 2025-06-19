@@ -9,6 +9,12 @@
     </head>
 <body>
     <h1>Lista de Productos</h1>
+
+    <?php if (isset($_GET['success'])): ?>
+        <div class="success-message"><?= htmlspecialchars($_GET['success']) ?></div>
+    <?php endif; ?>
+
+
     <a href="crear.php">Agregar Nuevo Producto</a>
     <br><br>
     <table>

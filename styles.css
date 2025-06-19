@@ -1,29 +1,53 @@
-/* Estilos generales */
+/* ==== Estilos Generales ==== */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
     color: #333;
+    margin: 0;
 }
 
 h1 {
     text-align: center;
     color: #444;
+    margin-bottom: 30px;
 }
 
-/* Enlace general */
+/* ==== Enlaces Generales ==== */
 a {
     color: #0d6efd;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 5px;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Tabla de productos */
+/* ==== Botón especial para "Agregar Producto" ==== */
+a[href="crear.php"] {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease;
+}
+
+a[href="crear.php"]:hover {
+    background-color: #218838;
+}
+
+/* ==== Botón Cancelar ==== */
+a[href="index.php"] {
+    color: #dc3545;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* ==== Tabla de productos ==== */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -31,6 +55,7 @@ table {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-radius: 8px;
     overflow: hidden;
+    margin-top: 10px;
 }
 
 th, td {
@@ -50,17 +75,62 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
-/* Botón para agregar producto */
-a[href="crear.php"] {
-    display: inline-block;
-    background-color: #28a745;
-    color: white;
-    padding: 10px 15px;
+/* ==== Formularios (crear y editar) ==== */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="hidden"],
+input[type="submit"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
     border-radius: 5px;
-    text-decoration: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
     transition: background-color 0.2s ease;
 }
 
-a[href="crear.php"]:hover {
-    background-color: #218838;
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* ==== Mensaje de éxito (opcional) ==== */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
 }
