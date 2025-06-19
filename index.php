@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>CRUD de Productos</title>
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
     </head>
 <body>
     <h1>Lista de Productos</h1>
