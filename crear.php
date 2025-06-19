@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         <textarea name="descripcion"></textarea>
         <br>
         <label for="precio">Precio:</label>
-        <input type="numbre" step="0.01" name="precio" required>
+        <input type="number" step="0.01" name="precio" required>
         <br>
         <label for="stock">Stock:</label>
         <input type="number" name="stock" required>
